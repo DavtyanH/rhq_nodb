@@ -16,7 +16,8 @@ then
 fi
 sed -i 's;^jboss\.bind\.address.*$;jboss.bind.address=0.0.0.0;g' ${RHQ_HOME}/bin/rhq-server.properties
 
-${RHQ_HOME}/bin/rhqctl install --server --storage --start
+${RHQ_HOME}/bin/rhqctl install 
+${RHQ_HOME}/bin/rhqctl start
 
 tail -F ${RHQ_HOME}/logs/server.log
 
