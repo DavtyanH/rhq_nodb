@@ -4,7 +4,7 @@ MAINTAINER  Armine Hovsepyan ahovsepy@redhat.com
 
 USER root
 
-RUN yum install -y unzip 
+RUN yum install -y unzip wget
 
 RUN wget http://sourceforge.net/projects/rhq/files/rhq/rhq-4.10/rhq-server-4.10.0.zip/download -O /opt/rhq-server-4.10.0.zip
 
